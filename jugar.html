@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <title>Play</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+    <!-- toggleMenu -->
+    <div class="toggleMenu" id="toggleBtn"></div>
+
+
+    <!-- menuContenedor -->
+    <div class="menuContenedor">
+        <ul class="menu">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./perfil.html">profile</a></li>
+            <li><a href="./jugar.html">play</a></li>
+            <li><a href="./iniciarCuenta.html">sing out</a></li>
+        </ul>
+    </div>
+
+
+    <div class="nav">
+
+        <!-- logo -->
+        <div class="logo">
+            <h1>
+                <span>play <br></span>
+                <br>
+                hello world !
+            </h1>
+        </div>
+
+        <!-- menu-links -->
+        <div class="menu-links">
+            <ul>
+                <a href="./index.html"><li>home.</li></a>
+                <a href="./perfil.html"><li>profile.</li></a>
+                <a><li id="state">play.</li></a>
+            </ul>
+        </div>
+
+        <!-- nombreEmpresa -->
+        <div class="nombreEmpresa">
+            voorpret
+        </div>
+
+        <!-- music -->
+        <div class="playmusic"><a href="#"  id="play"><i class="fa fa-play"></i></a></div>
+        <div class="pausemusic"><a href="#"  id="pause"><i class="fa fa-pause"></i></a></div>
+        <div class="forward"><a href="#"  id="forward"><i class="fa fa-forward"></i></a></div>
+
+    </div>
+
+
+    <!-- img -->
+    <div class="img">
+        <img src="./images/jugar.png" alt="jugar">
+    </div>
+
+
+    <!-- juegos -->
+    <div class="juegos">
+        <div class="contenedorJuegos">
+
+            <div class="juego">
+                <div class="boton">
+                    <a href="./jugarNormal.html"><button>Normal</button></a>
+                </div>
+                <div class="descripcion">
+                    <p>300 letras convinadas con espacios y numeros al azar, recomendado para empezar, validacion de errores y posicionamiento correcto de las manos</p>
+                    <br>
+                    <p>Best score: 0</p>
+                    <p>Best time: 0</p>
+                </div>
+            </div>
+
+            <div class="juego">
+                <div class="boton">
+                    <a href="./jugarWords.html"><button>Words</button></a>
+                </div>
+                <div class="descripcion">
+                    <p>50 palabras  al azar, que forman un texto completamente sin sentido.</p>
+                    <br>
+                    <p>Best score: 0</p>
+                    <p>Best time: 0</p>
+                </div>
+            </div>
+
+            <div class="juego">
+                <div class="boton">
+                    <a href="./jugarLegendary.html"><button>Legendary</button></a>
+                </div>
+                <div class="descripcion">
+                    <p>Letras convinadas con simbolos y espacios, con limite de tiempo, ideal para mejorar velocidad y convinarla con la presicion obtenida en los modos anteriores.</p>
+                    <br>
+                    <p>Best score: 0</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- texto -->
+    <div class="texto">
+        <div class="title" id="textoH">game mode?</div>
+        <p id="textoP">Se que ya quieres jugar pero, antes <br>decidamos el modo de juego</p>
+    </div>
+
+
+    <!-- ahoraBtn -->
+    <div class="ahoraBtn">
+       <a id="ahoraBtn">You can play wish music!</a>
+    </div>
+
+
+    <!-- social -->
+    <div class="social">
+        <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+        </ul>
+    </div>
+
+
+    <div class="contenedor-elipses">
+
+        <!-- elipse -->
+        <div class="elipse thin"></div>
+        <div class="elipse redsito"></div>
+        <div class="ellipse thick"></div>
+
+    </div>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- <script src="./javaScript/efectosGlobal.js"></script> -->
+    <script src="./javaScript/menu.js"></script>
+    <script src="./javaScript/musica.js"></script>
+
+
+</body>
+</html>

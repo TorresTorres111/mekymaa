@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <title>Modify Account</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/formularios.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+    <!-- cargaAnimacion -->
+    <div class="cargaAnimacion">
+        <h1>Mekymaa</h1><br>
+        <span>by voorpret</span>
+    </div>
+
+
+    <section>
+        <div class="contenedor">
+            <div class="usuario">
+
+                <!-- imgBx -->
+                <div class="imgBx"><img src="./images/imgBx1.jpg" alt="imgBx1"></div>
+
+                <!-- formBx -->
+                <div class="formBx">
+                    <form id="form" action="./perfil.html">
+                        <h2>modify account</h2>
+
+                        <span id="nombreMsg" class="validacionMensaje" ></span>
+                        <input type="text" placeholder="Your username" id="nombre">
+
+                        <span id="correoMsg" class="validacionMensaje" ></span>
+                        <input type="text" placeholder="Your email" id="correo">
+
+                        <span id="contraseñaMsg" class="validacionMensaje" ></span>
+                        <input type="password" placeholder="your password" id="contraseña">
+
+                        <input type="submit" value="Modify">
+                        <p class="texto">you don't want to modify ? <a href="./perfil.html">  to return.</a> </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="./javaScript/cargaFormulario.js"></script>
+    <script src="./javaScript/modificarCuenta.js"></script>
+
+
+</body>
+</html>

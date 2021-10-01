@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <title>Sign In</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/formularios.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+    <!-- cargaAnimacion -->
+    <div class="cargaAnimacion">
+        <h1>Mekymaa</h1><br>
+        <span>by voorpret</span>
+    </div>
+
+
+    <section>
+        <div class="contenedor">
+            <div class="usuario">
+
+                <!-- imgBx -->
+                <div class="imgBx"><img src="./images/imgBx2.png" alt="imgBx2"></div>
+
+                <!-- formBx -->
+                <div class="formBx">
+                    <form id="form" action="./index.html">
+                        <h2>sign in</h2>
+
+                        <span id="nombreMsg" class="validacionMensaje" ></span>
+                        <input type="text" placeholder="Username" id="nombre">
+
+                        <span id="contraseñaMsg" class="validacionMensaje" ></span>
+                        <input type="password" placeholder="Password" id="contraseña">
+
+                        <input type="submit" value="Login">
+                        <p class="texto">dont'n have an account ? <a href="./crearCuenta.html"> sign up.</a> </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="./javaScript/cargaFormulario.js"></script>
+    <script src="./javaScript/iniciarCuenta.js"></script>
+
+
+</body>
+</html>

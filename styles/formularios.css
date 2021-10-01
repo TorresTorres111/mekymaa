@@ -1,0 +1,166 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'agency fb';
+}
+
+
+body {
+    background: #151515;
+    color: #E1E1E1;
+}
+
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* contenedor */
+section .contenedor {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    background: #4D4D4D;
+    box-shadow: 0 15px 50px rgba( 0, 0, 0, .01 );
+    overflow: hidden;
+}
+section .contenedor .usuario {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+/* imgBx */
+section .contenedor .usuario .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+section .contenedor .usuario .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* formBx */
+section .contenedor .usuario .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #4D4D4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    transition: 0.5s;
+}
+section .contenedor .usuario .formBx form h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+/* inputs */
+section .contenedor .usuario .formBx form input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #4D4D4D;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #E1E1E1;
+}
+section .contenedor .usuario .formBx form input::placeholder {
+    color: #E1E1E1;
+}
+section .contenedor .usuario .formBx form input:focus {
+    outline: none;
+    color: #E1E1E1;
+}
+section .contenedor .usuario .formBx form input[ type='submit' ] {
+    max-width: 100px;
+    background: #E5383B;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    transition: 0.5s;
+    color: #E1E1E1;
+    margin-top: 10px;
+}
+section .contenedor .usuario .formBx form .texto {
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+section .contenedor .usuario .formBx form .texto a {
+    color: #E5383B;
+    text-decoration: none;
+}
+
+
+/* cargaAnimacion */
+.cargaAnimacion {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #4D4D4D;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cargaAnimacion h1 {
+    font-size: 120px;
+    letter-spacing: 20px;
+    color: #151515;
+    text-transform: uppercase;
+}
+.cargaAnimacion span {
+    font-family: 'Poppins', sans-serif;
+    color: #E1E1E1;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+
+/* validacionMensaje */
+.validacionMensaje {
+    font-family: 'Poppins', sans-serif;
+    color: #E5383B;
+    font-size: 9px;
+    display: none;
+}
